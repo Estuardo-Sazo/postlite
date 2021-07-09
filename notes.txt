@@ -1,0 +1,4 @@
+
+Para crear un nuevo modelo con su migration
+php artisan make:model Sale -m
+php artisan make:model SaleDetails -m  
