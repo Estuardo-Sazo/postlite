@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->enum('profile', ['ADMIN','EMPLOYEE'])->default('EMPLOYEE');
             $table->enum('status', ['ACTIVE','LOCKED'])->default('ACTIVE');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password',50);
+            $table->string('password',100);
             $table->rememberToken();
             $table->timestamps();
         });
